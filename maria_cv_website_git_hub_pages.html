@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maria Belen Rodriguez • CV</title>
+  <meta name="description" content="Industrial & Systems Engineering @ USC • SHPE National Board Undergraduate • Resume, experience, projects, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Brandable palette: tweak these two to switch between USC or SHPE looks */
+      --brand:#8C1515;   /* USC cardinal or try #1B365D for SHPE navy */
+      --accent:#FFC627;  /* USC gold or try #F05A28 for SHPE orange */
+      --text:#0f172a;    /* slate-900 */
+      --muted:#475569;   /* slate-600 */
+      --bg:#ffffff;
+      --chip:#eef2ff;
+      --card:#f8fafc;
+      --ring: 0 0 0 6px rgba(140,21,21,0.12); /* hover ring */
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.6;color:var(--text);background:var(--bg)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1024px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #e2e8f0;z-index:50}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .dot{width:12px;height:12px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent))}
+    .logo h1{font-size:16px;margin:0;font-weight:700;letter-spacing:.2px}
+    .navlinks{display:flex;flex-wrap:wrap;gap:12px}
+    .navlinks a{padding:8px 12px;border-radius:999px;font-weight:600;color:#334155}
+    .navlinks a:hover{background:#eef2f7}
+
+    .hero{padding:56px 0 24px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .hero-card{background:var(--card);border:1px solid #e2e8f0;border-radius:20px;padding:24px}
+    .kicker{color:var(--brand);font-weight:800;letter-spacing:.3px;text-transform:uppercase;font-size:12px}
+    h2{margin:8px 0 12px;font-size:34px;line-height:1.2}
+    .subtitle{color:var(--muted)}
+    .badges{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid #e0e7ff;color:#3730a3;padding:6px 10px;border-radius:999px;font-weight:600;font-size:12px}
+    .cta{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;font-weight:700;border:1px solid #e2e8f0;background:#fff}
+    .btn:hover{box-shadow:var(--ring)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff;border:none}
+
+    section{padding:12px 0}
+    .section-title{display:flex;align-items:center;gap:10px;margin:28px 0 10px}
+    .section-title h3{margin:0;font-size:18px;letter-spacing:.3px;text-transform:uppercase;color:#334155}
+    .bar{height:8px;width:16px;background:linear-gradient(135deg,var(--brand),var(--accent));border-radius:999px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media (max-width:900px){.cards{grid-template-columns:1fr}}
+    .card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:16px}
+    .card h4{margin:0 0 6px;font-size:16px}
+    .meta{color:#64748b;font-size:13px;margin-bottom:8px}
+    ul{margin:0;padding-left:18px}
+
+    footer{padding:32px 0 48px;color:#64748b}
+    .small{font-size:13px}
+    .spacer{height:16px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo"><span class="dot"></span><h1>Maria Belen Rodriguez</h1></div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="kicker">Industrial & Systems Engineering @ USC</div>
+        <h2>Engineer, builder, and SHPE leader focused on systems that help people.</h2>
+        <p class="subtitle">Undergraduate Member, SHPE National Board • Finance Director, ALPFA USC • Former RSR (Region 2)</p>
+        <div class="badges">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Azure & AWS</span>
+          <span class="chip">Quality & CI</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">📄 View Résumé (PDF)</a>
+          <a class="btn" href="https://www.linkedin.com/in/maria-belen-rod/" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a class="btn" href="#contact">✉️ Email</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="section-title"><span class="bar"></span><h3>Highlights</h3></div>
+        <ul>
+          <li>Summer 2025: Global Supply Chain Intern @ Eli Lilly — built NLP tools to classify 3,800+ incident reports and surface RCA insights.</li>
+          <li>Represent 10k+ SHPE students nationwide; co-lead initiatives that elevate chapters and member experience.</li>
+          <li>Built Streamlit dashboards (Python + SQL) and Power BI reports to support decision-making.</li>
+        </ul>
+        <div class="spacer"></div>
+        <div class="section-title"><span class="bar"></span><h3>Downloadables</h3></div>
+        <ul>
+          <li><a href="resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></li>
+          <li><a href="#projects">Selected Projects</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title"><span class="bar"></span><h3>About Me</h3></div>
+      <p>I’m a first-generation college student passionate about using industrial and systems engineering to create efficient, sustainable solutions that improve people’s lives. As the Undergraduate Member on SHPE’s National Board, I represent students nationwide and help strengthen leadership development, chapter collaboration, and member resources. I love building tools and programs that make it easier for others to thrive.</p>
+    </section>
+
+    <section id="experience">
+      <div class="section-title"><span class="bar"></span><h3>Experience</h3></div>
+      <div class="cards">
+        <article class="card">
+          <h4>Eli Lilly & Company — Global Supply Chain Intern</h4>
+          <div class="meta">Summer 2025 · Indianapolis, IN</div>
+          <ul>
+            <li>Developed Python + NLP tooling to automate classification of 3,800+ incident reports (EWM queue issues, IDoc failures).</li>
+            <li>Built Power BI dashboards to visualize trends and support root-cause analysis for continuous improvement.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>SHPE National Board — Undergraduate Member</h4>
+          <div class="meta">2025 Term · Nationwide</div>
+          <ul>
+            <li>Represent 10,000+ student members across 7 regions; partner with staff and regional leadership.</li>
+            <li>Lead initiatives on leadership development, resources, and chapter success metrics.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>ALPFA USC — Finance Director</h4>
+          <div class="meta">2024–Present · Los Angeles, CA</div>
+          <ul>
+            <li>Manage budgeting, sponsorship outreach, and professional programming with industry partners.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="section-title"><span class="bar"></span><h3>Leadership & Community</h3></div>
+      <div class="cards">
+        <article class="card">
+          <h4>SHPE Region 2 — Regional Student Representative</h4>
+          <div class="meta">2023–2024</div>
+          <ul>
+            <li>Supported 30+ student chapters across CA, NV, and AZ through resources, programming, and advocacy.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>Engineers Without Borders @ USC</h4>
+          <ul>
+            <li>Collaborating on local water sustainability and outreach projects in Los Angeles.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>School on Wheels — Volunteer Tutor</h4>
+          <ul>
+            <li>Tutor math and science for homeless and underserved youth in LA County.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title"><span class="bar"></span><h3>Projects</h3></div>
+      <div class="cards">
+        <article class="card">
+          <h4>Biosensor Technology Report</h4>
+          <div class="meta">USC ISE</div>
+          <ul>
+            <li>Co-authored research on wearables, AI integration, and medical diagnostics; focused on responsible innovation.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>LargeCo Data Dashboard</h4>
+          <div class="meta">Python · SQL · Streamlit · Power BI</div>
+          <ul>
+            <li>Interactive dashboard for operational metrics; improved visibility and decision-making.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>Azure / EC2 Virtualization</h4>
+          <div class="meta">Cloud & Systems</div>
+          <ul>
+            <li>Configured virtual machine environments to simulate enterprise system administration.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title"><span class="bar"></span><h3>Skills</h3></div>
+      <div class="cards">
+        <div class="card">
+          <h4>Data & Analytics</h4>
+          <ul>
+            <li>Python (pandas, numpy)</li>
+            <li>SQL</li>
+            <li>Power BI</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Systems & Cloud</h4>
+          <ul>
+            <li>Azure, AWS EC2</li>
+            <li>Linux, Git/GitHub</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Professional</h4>
+          <ul>
+            <li>Leadership & Mentorship</li>
+            <li>Process Improvement</li>
+            <li>Quality & RCA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title"><span class="bar"></span><h3>Contact</h3></div>
+      <div class="cards">
+        <div class="card">
+          <p>Email: <a href="mailto:mbrodrig@usc.edu">mbrodrig@usc.edu</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/maria-belen-rod/" target="_blank" rel="noopener">linkedin.com/in/maria-belen-rod/</a></p>
+          <p>Resume: <a href="resume.pdf" target="_blank" rel="noopener">Download PDF</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="small">© <span id="year"></span> Maria Belen Rodriguez · Built with HTML/CSS · Optimized for mobile & NFC sharing.</p>
+    </footer>
+  </main>
+
+  <script>
+    // Update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
